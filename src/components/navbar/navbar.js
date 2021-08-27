@@ -4,15 +4,15 @@ import "./navbar.css"
  function navbar() {
     return (
         <div className="navbar">
-            <ul>
-                <li> <a href="#" >ABOUT US</a> </li>
-                <li> <a href="#" >FOR YOU</a></li>
-                <li> <a href="#" >SERVICES</a></li>
-                <li> <a href="#" >BLOG</a></li>
-                <li> <a href="#" >VLOG</a></li>
-                <li> <a href="#" >CONTACT</a></li>
+            
+             <a href="#" >ABOUT US</a> 
+             <a href="#" >FOR YOU</a>
+             <a href="#" >SERVICES</a>
+             <a href="#" >BLOG</a>
+             <a href="#" >VLOG</a>
+             <a href="#" >CONTACT</a>
                     
-            </ul>
+            
         </div>
     )
 }

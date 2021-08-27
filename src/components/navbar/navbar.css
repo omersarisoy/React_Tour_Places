@@ -1,29 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
 .navbar{
     background-color: black;
-    font-family: 'Oleo Script', cursive;
-}
-
-.navbar ul{
     display: flex;
-    justify-content:center;
-    align-items: center;
-    list-style: none;
-    height: 50px;
-    text-align: center;
-    margin-left: 525px;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
 }
 
-.navbar ul li a{
-    margin-right: 70px;
+.navbar a {
+    text-decoration: none;
     color: white;
-    text-decoration:none ;
-    font-weight: 600;
-    font-size: 1.2rem;
-}  
+    padding: 25px;
+    font-size: 30px;
+}
 
- ul li a:hover{
-    background-color:rgb(177,225,248) ;
+a:hover{
+    background-color: #ace0f9;
     color: black;
-    cursor: pointer;
-    padding: 40px;
- }
+}
+

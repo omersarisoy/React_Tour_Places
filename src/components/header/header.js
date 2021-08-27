@@ -6,7 +6,6 @@ const header = () => {
         <div className= "header">
             POPULAR TOUR PLACES
         </div>
-
     )
 }
 

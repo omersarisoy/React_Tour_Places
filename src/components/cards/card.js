@@ -1,33 +1,33 @@
-import React from 'react';
-import "./card.css"
-import { data } from '../../helper/data';
+import React from "react";
+import "./card.css";
+import { data } from "../../helper/data";
 
-const card = () =>{
-    return(
-    <div className="container">
-        {data.map(item =>  {
+const Card = (props) => {
 
-            return(
-                
-                <div className="cards">
-                    <div className="title">
-                    <h1>{item.title}</h1>
-                    </div>
+  return (
+    <div className="container" >
+      
+      {data.map((item) => {
+        return (
+          <div className="cards" onClick={props.onClick} key={item.id}>
+              
+            <div className="title">
+              <h1> {item.title} </h1>
+            </div>
 
-                    <div className="image">
-                    <img src={item.image}></img>
-                    </div>
+            <div className="image">
+              <img src={item.image}/>
+            </div>
 
-                    <div className="desc">
-                    <p>{item.desc}</p>
-                    </div>
-                </div>
+            <div className= {props.IsVisible ? "description-click" : "description"} >
+              <p> {item.desc} </p>
+            </div>
 
-            )
-          } )
-        }
+          </div>
+        );
+      })}
     </div>
-    )
-}
+  );
+};
 
-export default card;
+export default Card;
